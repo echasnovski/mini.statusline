@@ -170,8 +170,8 @@ MiniStatusline.config = {
 
   -- Whether to set Vim's settings for statusline (make it always shown with
   -- 'laststatus' set to 2).
-  -- To use global statusline, set this to `false` and 'laststatus' to 3.
-  set_vim_settings = true,
+  -- To use global statusline, set the 'laststatus' to 3.
+  set_vim_settings = vim.o.laststatus == 3 and false or true,
 }
 --minidoc_afterlines_end
 
